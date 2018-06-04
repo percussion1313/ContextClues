@@ -1,11 +1,11 @@
-function accusationAdder() {
-    var i = 0;
-    while (i<=100)
-      {
-      document.write("<h3>Accusation " + i + "</h3>");
-      i++;
-      }
+function addAccusation() {
+    var accusation;
+    var i = 1
+    while (i<=100) {
+        accusation += `<h3>Accusation ${i}</h3>`;
+        i++;
+    }
+    $('body').append(accusation);
 }
 
-accusationAdder();
-   
+addAccusation()
